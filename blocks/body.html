@@ -1,0 +1,22 @@
+<div class="col-md-12">
+  <div class="col-md-6">
+    <p class="lead" ng-bind-html="md.cite_unix"></p>
+    <span ng-bind-html="md.welcome"></span>
+  </div>
+  <div class="col-md-6" ng-include="'blocks/carousel.html'"></div>
+</div>
+<div class="col-md-12 upmargin">
+  <div class="col-md-4" ng-repeat="cat in ['history', 'expertise', 'examples']">
+    <img class="center-block" src="{{ 'media/images/' + cat + '.png' }}" />
+    <h3 class="text-center">{{ cat }}</h3>
+    <span ng-bind-html="md[cat]"></span>
+  </div>
+</div>
+<div class="col-md-12 upmargin aws">
+  <h4 class="text-center sectiontitle">Amazon Web Services</h4>
+    <span ng-bind-html="md.aws"></span>
+</div>
+<div class="col-md-12 upmargin unix">
+  <h4 class="text-center sectiontitle">UNIX & Linux</h4>
+    <span ng-bind-html="md.unix"></span>
+</div>
