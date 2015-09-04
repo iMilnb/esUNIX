@@ -7,7 +7,7 @@
 </div>
 <div class="col-md-12 upmargin">
   <div class="col-md-4" ng-repeat="cat in ['history', 'expertise', 'examples']">
-    <img class="center-block" src="{{ 'media/images/' + cat + '.png' }}" />
+    <img class="center-block" ng-src="{{ 'media/images/' + cat + '.png' }}" />
     <h3 class="text-center">{{ cat }}</h3>
     <span ng-bind-html="md[cat]"></span>
   </div>
