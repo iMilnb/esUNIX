@@ -11,6 +11,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="style.css" rel="stylesheet">
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-sanitize.min.js"></script>
@@ -55,12 +56,29 @@
     <div class="container">
       <div class="starter-template" ng-view>
       </div>
-
     </div><!-- /.container -->
 
     <footer class="navbar-inverse navbar-fixed-bottom">
-      <div class="container-fluid">
-        <p class="text-muted">©2015 esUNIX</p>
+      <div class="container col-md-12">
+        <div class="text-muted col-md-4">
+          <a href="https://github.com/iMilnb/esUNIX">
+            <img src="media/images/gh2.png" width="25px">
+          </a>
+          <span style="margin-left: 10px;">
+            ©2015 esUNIX
+          </span>
+        </div>
+        <div class="col-md-4 text-center" ng-include="'blocks/flags.html'">
+        </div>
+        <div class="col-md-4 pull-right poweredby">
+          <a href="https://angularjs.org/">
+            <img class="pull-right" alt="AngularJS"
+            src="media/images/AngularJS-small.png" />
+          </a>
+          <span class="pull-right small" style="margin-right: 10px;">
+            powered by
+          </span>
+        </div>
       </div>
     </footer>
 
