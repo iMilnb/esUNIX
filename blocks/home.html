@@ -1,7 +1,14 @@
 <div class="col-md-12">
   <div class="col-md-6">
-    <p class="lead" ng-bind-html="md.cite_unix"></p>
+    <p class="lead fa fa-quote-left fa-3x fa-pull-left"
+     ng-bind-html="md.cite_unix"></p>
     <span ng-bind-html="md.welcome"></span>
+    <p ng-bind-html="goals"></p>
+    <ul class="fa-ul">
+      <li><i class="fa-li fa fa-money"></i>{{ roi }}</li>
+      <li><i class="fa-li fa fa-ship"></i>{{ delivery }}</li>
+      <li><i class="fa-li fa fa-area-chart"></i>{{ reports }}</li>
+    </ul>
   </div>
   <div class="col-md-6" ng-include="'blocks/carousel.html'"></div>
 </div>
