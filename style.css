@@ -92,3 +92,16 @@ body {
   margin-bottom: 8px;
 }
 
+#scrolldown {
+  position: fixed;
+  right: 20px;
+  bottom: 60px;
+}
+
+#scrolldown a i {
+  color: #aaa;
+}
+
+#scrolldown a:hover i {
+  color: #999;
+}
