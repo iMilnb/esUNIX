@@ -42,10 +42,10 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#/">Main</a></li>
-            <li><a href="#/aws">Amazon Web Services</a></li>
-            <li><a href="#/unix">UNIX & Linux</a></li>
-            <li><a href="#/contact">Contact</a></li>
+            <li class="ng-class: sect.class;" ng-repeat="sect in sections">
+              <a ng-href="{{sect.link}}"
+               ng-click="navstyle(sect)">{{ sect.title }}</a>
+            </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
