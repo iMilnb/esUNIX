@@ -1,7 +1,6 @@
-lang: 'en'
 title: 'esUNIX, engineering & solutions for UNIX-based platforms'
 
-md_cite_unix: |
+md_cite_welcome: |
   > _Contrary to popular belief, Unix is user friendly. It just happens
   > to be very selective about who it decides to make friends with._
 
@@ -81,6 +80,9 @@ md_examples: |
   [5]: https://aws.amazon.com/elasticloadbalancing/
   [6]: https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard
 
+md_cite_aws: |
+  > Friends don't let friends build datacenters --Charles E. Phillips
+
 md_aws: |
   [Amazon Web Services][1] is the most known and powerful Cloud platform around,
   and you know it _with great power comes great responsibilities_!
@@ -104,14 +106,12 @@ md_aws: |
   your project setup will be explained, written down and teached to the team in
   charge.
 
-
   [1]: https://aws.amazon.com/
 
-md_unix: |
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-  culpa qui officia deserunt mollit anim id est laborum.
+md_cite_unix: |
+  > UNIX is not so much an operating system as a way of thinking
 
+md_unix: |
+  UNIX and GNU/Linux are everywhere, phones, watches, TVs, WiFi routers,
+  Internet hardware, from the smallest to the biggest companies, UNIX and Linux
+  are part of technology's heart.

@@ -68,11 +68,6 @@ body {
 }
 
 .aws {
-  background: #222020;
-  background-image: url(media/images/dotted.png);
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  color: white;
 }
 
 .unix {
