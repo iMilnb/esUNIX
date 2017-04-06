@@ -6,10 +6,10 @@ var vheader = new Vue({
     data: {
         title: 'esUNIX',
         sections: [
-            { title: 'Main', link: '/' },
-            { title: 'Amazon Web Services', link: '/aws' },
-            { title: 'UNIX & Linux', link: '/unix' },
-            { title: 'Contact', link: '/contact' }
+            { title: 'Main', link: '#home' },
+            { title: 'Amazon Web Services', link: '#aws' },
+            { title: 'UNIX & Linux', link: '#unix' },
+            { title: 'Contact', link: '#contact' }
         ]
     },
     methods: {
@@ -17,6 +17,8 @@ var vheader = new Vue({
             this.sections.forEach(function(sect) {
               sect.class = (sect.link == active.link ? 'active' : '');
             });
+            window.location.hash = active.link;
+            window.location.reload();
         },
     }
 });
@@ -24,7 +26,6 @@ var vheader = new Vue({
 Vue.component('bodycontent', {
     template: '#bodycontent',
     data: function() {
-        countries: ['es', 'en', 'fr'];
         var msg = {};
         var md = {};
         var currentroute = window.location.hash.substring(1);
@@ -47,9 +48,6 @@ Vue.component('bodycontent', {
                         document.title = v;
                     }
                 });
-            })
-            .fail(function() {
-                console.log('error while loading');
             });
         }
     }
@@ -65,7 +63,29 @@ var vcontainer = new Vue({
 
             return (doclen > viewport ? true : false);
         }
-
     }
 });
 
+var vfooter = new Vue({
+    el: '#vfooter',
+    data: {
+        countries: ['es', 'en', 'fr'],
+        flag: {},
+        country: ''
+    },
+
+    methods: {
+        updatelang: function(country) {
+            language = country;
+            console.log(language);
+        }
+    },
+
+    computed: { function() {
+            $.each(this.countries, function(c) {
+                var opaque = (c == country ? '1' : '0.4');
+                this.flag[c] = {'opacity': opaque};
+            });
+        }
+    }
+});

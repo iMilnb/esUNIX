@@ -63,25 +63,33 @@
 
     <!-- bottom / footer -->
     <footer class="navbar-inverse navbar-fixed-bottom">
-      <div class="container col-md-12">
-        <div class="text-muted col-md-4">
-          <a href="https://github.com/iMilnb/esUNIX">
-            <img src="media/images/gh2.png" width="25px">
-          </a>
-          <span style="margin-left: 10px;">
-            ©2017 esUNIX
-          </span>
-        </div>
-        <div class="col-md-4 text-center" ng-include="'blocks/flags.html'">
-        </div>
-        <div class="col-md-4 pull-right poweredby">
-          <a href="https://vuejs.org/">
-            <img class="pull-right" alt="Vue.js"
-            src="media/images/vue_logo.png" width="25px"/>
-          </a>
-          <span class="pull-right small" style="margin-right: 10px;">
-            powered by
-          </span>
+      <div id="vfooter">
+        <div class="container col-md-12">
+          <div class="text-muted col-md-4">
+            <a href="https://github.com/iMilnb/esUNIX">
+              <img src="media/images/gh2.png" width="25px">
+            </a>
+            <span style="margin-left: 10px;">
+              ©2017 esUNIX
+            </span>
+          </div>
+          <div class="col-md-4 text-center">
+            <span v-for="country in countries" class="flags">
+              <a href v-on:click="updatelang(country)">
+                <img :src="'media/images/' + country + '_flag.png'"
+                 width="30px" :style="flag[country]" />
+              </a>
+            </span>
+          </div>
+          <div class="col-md-4 pull-right poweredby">
+            <a href="https://vuejs.org/">
+              <img class="pull-right" alt="Vue.js"
+              src="media/images/vue_logo.png" width="25px"/>
+            </a>
+            <span class="pull-right small" style="margin-right: 10px;">
+              powered by
+            </span>
+          </div>
         </div>
       </div>
     </footer>
@@ -97,6 +105,7 @@
 
     <script type="text/x-template" id="bodycontent">
     <div class="starter-template">
+    <!-- AWS -->
       <template v-if="currentroute == 'aws'">
         <div class="col-md-12 upmargin">
           <div class="col-md-6">
@@ -113,6 +122,24 @@
           <span v-html="md.aws"></span>
         </div>
       </template>
+    <!-- UNIX -->
+      <template v-else-if="currentroute == 'unix'">
+        <div class="col-md-12 upmargin">
+          <div class="col-md-6">
+            <p class="lead fa fa-quote-left fa-3x fa-pull-left"
+             v-html="md.cite_unix"></p>
+          </div>
+          <div class="col-md-6">
+            <a href="http://www.unix.org">
+              <img src="media/images/unixlinuxplates.png"
+               width="300px" alt="UNIX Live Free or Die">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-12 upmargin aws">
+          <span v-html="md.unix"></span>
+        </div>
+      </template>
     <!-- homepage -->
       <template v-else>
         <div class="col-md-12">
@@ -126,6 +153,9 @@
               <li><i class="fa-li fa fa-ship"></i>{{ msg.delivery }}</li>
               <li><i class="fa-li fa fa-area-chart"></i>{{ msg.reports }}</li>
             </ul>
+          </div>
+          <div class="col-md-6">
+            <img src="media/images/homegfx.png" class="img-responsive">
           </div>
         </div>
         <div class="col-md-12 upmargin">
