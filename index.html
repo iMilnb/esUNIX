@@ -1,23 +1,19 @@
 <!DOCTYPE html>
-<html ng-app="esUNIX" ng-init="lang='en';" lang="{{ lang }}">
+<html lang="{{ language }}">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title ng-bind="pageTitle"></title>
+    <title>{{ title }}</title>
 
     <link href='//fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="style.css" rel="stylesheet">
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-sanitize.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-animate.min.js"></script>
-
+	
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -25,40 +21,43 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body ng-controller="contentController">
+  <body>
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">
-            <img alt="esUNIX" src="media/images/esUNIX.png">
-          </a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="ng-class: sect.class;" ng-repeat="sect in sections">
-              <a ng-href="{{sect.link}}"
-               ng-click="navstyle(sect)">{{ sect.title }}</a>
-            </li>
-          </ul>
-        </div><!--/.nav-collapse -->
+        <div id="vheader"> <!-- vue js related -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img alt="esUNIX" src="media/images/esUNIX.png">
+            </a>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li v-bind:class="sect.class" v-for="sect in sections">
+                <a v-bind:href="sect.link" v-on:click="navstyle(sect)">
+                  {{ sect.title }}</a>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div> <!-- vue -->
       </div>
     </nav>
 
     <!-- main -->
     <div class="container">
-      <div class="starter-template" ng-view>
-      </div>
-      <div id="scrolldown" ng-show="showscroll()">
-        <a href="javascript:scrolldown()">
-          <i class="fa fa-3x fa-arrow-circle-o-down"></i>
-        </a>
+      <div id="vcontainer"> <!-- Vue -->
+        <bodycontent></bodycontent>
+        <div id="scrolldown" v-if="showscroll() === true">
+          <a href="javascript:scrolldown()">
+            <i class="fa fa-3x fa-arrow-circle-o-down"></i>
+          </a>
+        </div>
       </div>
     </div><!-- /.container -->
 
@@ -70,15 +69,15 @@
             <img src="media/images/gh2.png" width="25px">
           </a>
           <span style="margin-left: 10px;">
-            ©2015 esUNIX
+            ©2017 esUNIX
           </span>
         </div>
         <div class="col-md-4 text-center" ng-include="'blocks/flags.html'">
         </div>
         <div class="col-md-4 pull-right poweredby">
-          <a href="https://angularjs.org/">
-            <img class="pull-right" alt="AngularJS"
-            src="media/images/AngularJS-small.png" />
+          <a href="https://vuejs.org/">
+            <img class="pull-right" alt="Vue.js"
+            src="media/images/vue_logo.png" width="25px"/>
           </a>
           <span class="pull-right small" style="margin-right: 10px;">
             powered by
@@ -90,9 +89,57 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+
     <script src="js/js-yaml.min.js"></script>
-    <script src="js/marked.js"></script>
-    <script src="js/esunix.js"></script>
+    <script src="js/marked.min.js"></script>
+
+    <script type="text/x-template" id="bodycontent">
+    <div class="starter-template">
+      <template v-if="currentroute == 'aws'">
+        <div class="col-md-12 upmargin">
+          <div class="col-md-6">
+            <p class="lead fa fa-quote-left fa-3x fa-pull-left"
+             v-html="md.cite_aws"></p>
+          </div>
+          <div class="col-md-6">
+            <a href="http://aws.amazon.com/">
+              <img src="media/images/aws.png" width="300px" alt="Amazon Web Services">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-12 upmargin aws">
+          <span v-html="md.aws"></span>
+        </div>
+      </template>
+    <!-- homepage -->
+      <template v-else>
+        <div class="col-md-12">
+          <div class="col-md-6">
+            <p class="lead fa fa-quote-left fa-3x fa-pull-left"
+             v-html="md.cite_welcome"></p>
+            <span v-html="md.welcome"></span>
+            <p>{{ msg.goals }}</p>
+            <ul class="fa-ul" style="margin-left: 50px; padding: 5px;">
+              <li><i class="fa-li fa fa-money"></i>{{ msg.roi }}</li>
+              <li><i class="fa-li fa fa-ship"></i>{{ msg.delivery }}</li>
+              <li><i class="fa-li fa fa-area-chart"></i>{{ msg.reports }}</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-12 upmargin">
+          <div class="col-md-4" v-for="cat in ['history', 'expertise', 'examples']">
+            <img class="center-block" :src="'media/images/' + cat + '.png'" />
+            <h3 class="text-center" v-html="cat"></h3>
+            <span v-html="md[cat]"></span>
+          </div>
+        </div>
+      </template> <!-- if hash -->
+    </div>
+    </script>
+
+    <script src="js/vuesunix.js"></script>
+
   </body>
 </html>

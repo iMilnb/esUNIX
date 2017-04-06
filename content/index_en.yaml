@@ -10,9 +10,7 @@ md_welcome: |
 
   Over the years, people from _esUNIX_ have dealt with hundreds of highly
   available and sensitive environments such as **network operators**,
-  **hosting companies** or even global [VoIP][1] platforms.
-
-  [1]: http://en.wikipedia.org/wiki/Voice_over_IP
+  **hosting companies** or even global VoIP platforms.
 
 goals: 'In short, our mission key points'
 roi: 'Optimize your R.O.I with a global cost-based approach'
@@ -87,15 +85,22 @@ md_aws: |
   [Amazon Web Services][1] is the most known and powerful Cloud platform around,
   and you know it _with great power comes great responsibilities_!
   There are many ways of designing an _AWS_ infrastructure, from the simplest
-  to the unnecessarily complicated. Our mission: to fit your needs.
+  to the unnecessarily complicated. Our mission: to **fit your needs**.
 
   You might have your project in mind:
 
-  * migrate your physical infrastructure to the cloud?
-  * extend your existing infrastructure to the Cloud?
-  * start a brand new project?
-  * prepare your existing _AWS_ assets for massive traffic or computing needs
-    growth?
+  <ul class="fa-ul skillsitems">
+    <li><i class="fa-li fa fa-truck"></i>**Migrate** your physical
+    infrastructure to the Cloud?</li>
+    <li><i class="fa-li fa fa-code-fork"></i>**Extend** / **hybridize** your
+    existing infrastructure to the Cloud?</li>
+    <li><i class="fa-li fa fa-star"></i>Start a **brand new** project?</li>
+    <li><i class="fa-li fa fa-rocket"></i>Prepare your existing _AWS_ assets
+    for massive traffic or computing needs **growth**?</li>
+    <li><i class="fa-li fa fa-stethoscope"></i>**Audit** an existing
+    infrastructure?</li>
+    <li><i class="fa-li fa fa-graduation-cap"></i>**Train** your teams?</li>
+  </ul>
 
   Every one of these requests have an adequate and progressive answer. No need
   for disruption, we have managed the most complex use cases without a second of
@@ -112,6 +117,27 @@ md_cite_unix: |
   > UNIX is not so much an operating system as a way of thinking
 
 md_unix: |
-  UNIX and GNU/Linux are everywhere, phones, watches, TVs, WiFi routers,
-  Internet hardware, from the smallest to the biggest companies, UNIX and Linux
-  are part of today's technology heart.
+  **UNIX** and **GNU/Linux** are everywhere, phones, watches, TVs, WiFi routers,
+  Internet hardware, gigantic cloud infrastructures or online medias, from the
+  smallest to the biggest companies, UNIX and Linux are part of today's
+  technology heart.
+
+  How does _esUNIX_ fit in? Simple answer: we've been working for all of those.
+
+  <ul class="fa-ul skillsitems">
+    <li><i class="fa-li fa fa-lightbulb-o"></i>Got an infrastructure in mind
+    and need the help of an **experienced professional** to make it happen?</li>
+    <li><i class="fa-li fa fa-stethoscope"></i>Your platform is up and
+    running, but either you'd need an **audit** to ensure its viability or you
+    need an external eye to find out what's causing those slowdowns?</li>
+    <li><i class="fa-li fa fa-gear"></i>You built it all by yourselves, but in
+    an old fashion way, piece by piece not really thinking about
+    **industrialization**?</li>
+    <li><i class="fa-li fa fa-bug"></i>**Debug** an existing script,
+    program, component, deployment mechanism?  </li>
+    <li><i class="fa-li fa fa-graduation-cap"></i>You might need **training**
+    on those new technologies you'd like to use in your project?</li>
+  </ul>
+
+  **We know Linux, we know UNIX**, we can help you on all those areas in a
+  professional and progressive way, trust us to be your guide.
