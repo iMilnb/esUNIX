@@ -77,15 +77,17 @@ var vfooter = new Vue({
     methods: {
         updatelang: function(country) {
             language = country;
-            console.log(language);
-        }
-    },
-
-    computed: { function() {
-            $.each(this.countries, function(c) {
-                var opaque = (c == country ? '1' : '0.4');
-                this.flag[c] = {'opacity': opaque};
+            this.updateflag();
+        },
+        updateflag: function() {
+            var vm = this;
+            $.each(this.countries, function(i, c) {
+                var opaque = (c == language ? '1' : '0.4');
+                var property = {'opacity':  opaque};
+                vm.$set(vm.flag, c, property);
             });
         }
     }
 });
+
+vfooter.updateflag();
