@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ language }}">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -100,69 +100,69 @@
     <script src="js/marked.min.js"></script>
 
     <template id="bodycontent">
-    <div class="starter-template">
-    <!-- AWS -->
-      <div v-if="show && show['aws']">
-        <div class="col-md-12 upmargin">
-          <div class="col-md-6">
-            <p class="lead fa fa-quote-left fa-3x fa-pull-left"
-             v-html="md.cite_aws"></p>
+      <div class="starter-template">
+      <!-- AWS -->
+        <div v-if="show && show['aws']">
+          <div class="col-md-12 upmargin">
+            <div class="col-md-6">
+              <p class="lead fa fa-quote-left fa-3x fa-pull-left"
+               v-html="md.cite_aws"></p>
+            </div>
+            <div class="col-md-6">
+              <a href="http://aws.amazon.com/">
+                <img src="media/images/aws.png" width="300px" alt="Amazon Web Services">
+              </a>
+            </div>
           </div>
-          <div class="col-md-6">
-            <a href="http://aws.amazon.com/">
-              <img src="media/images/aws.png" width="300px" alt="Amazon Web Services">
-            </a>
+          <div class="col-md-12 upmargin aws">
+            <span v-html="md.aws"></span>
           </div>
         </div>
-        <div class="col-md-12 upmargin aws">
-          <span v-html="md.aws"></span>
+      <!-- UNIX -->
+        <div v-else-if="show && show['unix']">
+          <div class="col-md-12 upmargin">
+            <div class="col-md-6">
+              <p class="lead fa fa-quote-left fa-3x fa-pull-left"
+               v-html="md.cite_unix"></p>
+            </div>
+            <div class="col-md-6">
+              <a href="http://www.unix.org">
+                <img src="media/images/unixlinuxplates.png"
+                 width="300px" alt="UNIX Live Free or Die">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-12 upmargin aws">
+            <span v-html="md.unix"></span>
+          </div>
+        </div>
+      <!-- homepage -->
+        <div v-else>
+          <div class="col-md-12">
+            <div class="col-md-6">
+              <p class="lead fa fa-quote-left fa-3x fa-pull-left"
+               v-html="md.cite_welcome"></p>
+              <span v-html="md.welcome"></span>
+              <p>{{ msg.goals }}</p>
+              <ul class="fa-ul" style="margin-left: 50px; padding: 5px;">
+                <li><i class="fa-li fa fa-money"></i>{{ msg.roi }}</li>
+                <li><i class="fa-li fa fa-ship"></i>{{ msg.delivery }}</li>
+                <li><i class="fa-li fa fa-area-chart"></i>{{ msg.reports }}</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <img src="media/images/homegfx.png" class="img-responsive">
+            </div>
+          </div>
+          <div class="col-md-12 upmargin">
+            <div class="col-md-4" v-for="cat in ['history', 'expertise', 'examples']">
+              <img class="center-block" :src="'media/images/' + cat + '.png'" />
+              <h3 class="text-center" v-html="cat"></h3>
+              <span v-html="md[cat]"></span>
+            </div>
+          </div>
         </div>
       </div>
-    <!-- UNIX -->
-      <div v-else-if="show && show['unix']">
-        <div class="col-md-12 upmargin">
-          <div class="col-md-6">
-            <p class="lead fa fa-quote-left fa-3x fa-pull-left"
-             v-html="md.cite_unix"></p>
-          </div>
-          <div class="col-md-6">
-            <a href="http://www.unix.org">
-              <img src="media/images/unixlinuxplates.png"
-               width="300px" alt="UNIX Live Free or Die">
-            </a>
-          </div>
-        </div>
-        <div class="col-md-12 upmargin aws">
-          <span v-html="md.unix"></span>
-        </div>
-      </div>
-    <!-- homepage -->
-      <div v-else>
-        <div class="col-md-12">
-          <div class="col-md-6">
-            <p class="lead fa fa-quote-left fa-3x fa-pull-left"
-             v-html="md.cite_welcome"></p>
-            <span v-html="md.welcome"></span>
-            <p>{{ msg.goals }}</p>
-            <ul class="fa-ul" style="margin-left: 50px; padding: 5px;">
-              <li><i class="fa-li fa fa-money"></i>{{ msg.roi }}</li>
-              <li><i class="fa-li fa fa-ship"></i>{{ msg.delivery }}</li>
-              <li><i class="fa-li fa fa-area-chart"></i>{{ msg.reports }}</li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <img src="media/images/homegfx.png" class="img-responsive">
-          </div>
-        </div>
-        <div class="col-md-12 upmargin">
-          <div class="col-md-4" v-for="cat in ['history', 'expertise', 'examples']">
-            <img class="center-block" :src="'media/images/' + cat + '.png'" />
-            <h3 class="text-center" v-html="cat"></h3>
-            <span v-html="md[cat]"></span>
-          </div>
-        </div>
-      </div>
-    </div>
     </template>
 
     <script src="js/vuesunix.js"></script>

@@ -16,7 +16,7 @@ var app = new Vue({
             { title: 'UNIX & Linux', link: 'unix' },
             { title: 'Contact', link: 'contact' }
         ],
-        countries: ['es', 'en', 'fr'],
+        countries: ['es', 'en'],
         flag: {},
         show: {},
         md: {},
@@ -51,7 +51,8 @@ var app = new Vue({
         },
         showscroll: function() {
             var viewport = window.innerHeight;
-            var doclen = document.documentElement.clientHeight;
+            var doclen = document.body.clientHeight;
+            console.log(viewport, doclen);
 
             return (doclen > viewport ? true : false);
         },
@@ -68,9 +69,23 @@ var app = new Vue({
                 vm.contentload();
             });
         }
+    },
+    mounted: function() {
+        this.contentload();
+        this.updateflag();
+        this.navstyle({link: 'home' });
     }
 });
 
-app.contentload();
-app.updateflag();
-app.navstyle({link: 'home' });
+// Not Vue related
+
+function scrolldown() {
+    window.scrollBy(0,window.innerHeight);
+}
+
+document.onscroll = function() {
+    var elt = document.getElementById('scrolldown');
+    var y = window.innerHeight + window.scrollY >= document.getElementById('app').clientHeight;
+
+    elt.style.display = y ? 'none' : 'inline';
+}
