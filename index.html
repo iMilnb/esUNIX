@@ -50,7 +50,7 @@
   
       <!-- main -->
       <div class="container">
-        <bodycontent :show="show"></bodycontent>
+        <bodycontent :show="show" :md="md" :msg="msg"></bodycontent>
         <div id="scrolldown" v-if="showscroll() === true">
           <a href="javascript:scrolldown()">
             <i class="fa fa-3x fa-arrow-circle-o-down"></i>

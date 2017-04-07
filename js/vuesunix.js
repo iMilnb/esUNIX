@@ -3,15 +3,24 @@ var language = 'en';
 
 Vue.component('bodycontent', {
     template: '#bodycontent',
-    props: ['show', 'language'],
+    props: ['show', 'language', 'md', 'msg']
+})
 
-    data: function() {
-        var msg = {};
-        var md = {};
-        this.contentload();
-
-
-        return { msg, md }
+var app = new Vue({
+    el: '#app',
+    data: {
+        title: 'esUNIX',
+        sections: [
+            { title: 'Main', link: 'home' },
+            { title: 'Amazon Web Services', link: 'aws' },
+            { title: 'UNIX & Linux', link: 'unix' },
+            { title: 'Contact', link: 'contact' }
+        ],
+        countries: ['es', 'en', 'fr'],
+        flag: {},
+        show: {},
+        md: {},
+        msg: {}
     },
     methods: {
         contentload: function() {
@@ -29,25 +38,7 @@ Vue.component('bodycontent', {
                     }
                 });
             });
-        }
-    }
-})
-
-var app = new Vue({
-    el: '#app',
-    data: {
-        title: 'esUNIX',
-        sections: [
-            { title: 'Main', link: 'home' },
-            { title: 'Amazon Web Services', link: 'aws' },
-            { title: 'UNIX & Linux', link: 'unix' },
-            { title: 'Contact', link: 'contact' }
-        ],
-        countries: ['es', 'en', 'fr'],
-        flag: {},
-        show: {},
-    },
-    methods: {
+        },
         navstyle: function(active) {
             var vm = this;
             this.sections.forEach(function(sect) {
@@ -74,10 +65,12 @@ var app = new Vue({
                 var opaque = (c == language ? '1' : '0.4');
                 var property = {'opacity':  opaque};
                 vm.$set(vm.flag, c, property);
+                vm.contentload();
             });
         }
     }
 });
 
+app.contentload();
 app.updateflag();
 app.navstyle({link: 'home' });
