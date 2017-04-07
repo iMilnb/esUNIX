@@ -39,7 +39,7 @@
           </div>
           <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li v-bind:class="sect.class" v-for="sect in sections">
+              <li v-for="sect in sections" :class="sect.class">
                 <a v-bind:href="'#' + sect.link" v-on:click="navstyle(sect)">
                   {{ sect.title }}</a>
               </li>

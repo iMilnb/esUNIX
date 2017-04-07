@@ -3,7 +3,7 @@ var language = 'en';
 
 Vue.component('bodycontent', {
     template: '#bodycontent',
-    props: ['show'],
+    props: ['show', 'language'],
 
     data: function() {
         var msg = {};
@@ -46,17 +46,17 @@ var app = new Vue({
         countries: ['es', 'en', 'fr'],
         flag: {},
         show: {},
-        foo: 'FOO FOO FOO'
     },
     methods: {
         navstyle: function(active) {
             var vm = this;
             this.sections.forEach(function(sect) {
-              sect.class = (sect.link == active.link ? 'active' : '');
-              vm.$set(vm.show, sect.link, false);
+                sect.class = (sect.link == active.link ? 'active' : '');
+                vm.$set(vm.show, sect.link, false);
             });
             window.location.hash = '#' + active.link;
             vm.$set(vm.show, active.link, true);
+            vm.$forceUpdate();
         },
         showscroll: function() {
             var viewport = window.innerHeight;
