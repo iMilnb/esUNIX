@@ -58,6 +58,7 @@ var app = new Vue({
         },
         updatelang: function(country) {
             language = country;
+            document.documentElement.lang = country;
             this.updateflag();
         },
         updateflag: function() {
