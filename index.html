@@ -23,9 +23,9 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div id="vheader"> <!-- vue js related -->
+    <div id="app" class="container-fluid"> <!-- Vue app -->
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
               <span class="sr-only">Toggle navigation</span>
@@ -40,30 +40,26 @@
           <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
               <li v-bind:class="sect.class" v-for="sect in sections">
-                <a v-bind:href="sect.link" v-on:click="navstyle(sect)">
+                <a v-bind:href="'#' + sect.link" v-on:click="navstyle(sect)">
                   {{ sect.title }}</a>
               </li>
             </ul>
           </div><!--/.nav-collapse -->
-        </div> <!-- vue -->
-      </div>
-    </nav>
-
-    <!-- main -->
-    <div class="container">
-      <div id="vcontainer"> <!-- Vue -->
-        <bodycontent></bodycontent>
+        </div>
+      </nav>
+  
+      <!-- main -->
+      <div class="container">
+        <bodycontent :show="show"></bodycontent>
         <div id="scrolldown" v-if="showscroll() === true">
           <a href="javascript:scrolldown()">
             <i class="fa fa-3x fa-arrow-circle-o-down"></i>
           </a>
         </div>
-      </div>
-    </div><!-- /.container -->
-
-    <!-- bottom / footer -->
-    <footer class="navbar-inverse navbar-fixed-bottom">
-      <div id="vfooter">
+      </div><!-- /.container -->
+  
+      <!-- bottom / footer -->
+      <footer class="navbar-inverse navbar-fixed-bottom">
         <div class="container col-md-12">
           <div class="text-muted col-md-4">
             <a href="https://github.com/iMilnb/esUNIX">
@@ -91,8 +87,8 @@
             </span>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -103,10 +99,10 @@
     <script src="js/js-yaml.min.js"></script>
     <script src="js/marked.min.js"></script>
 
-    <script type="text/x-template" id="bodycontent">
+    <template id="bodycontent">
     <div class="starter-template">
     <!-- AWS -->
-      <template v-if="currentroute == 'aws'">
+      <div v-if="show && show['aws']">
         <div class="col-md-12 upmargin">
           <div class="col-md-6">
             <p class="lead fa fa-quote-left fa-3x fa-pull-left"
@@ -121,9 +117,9 @@
         <div class="col-md-12 upmargin aws">
           <span v-html="md.aws"></span>
         </div>
-      </template>
+      </div>
     <!-- UNIX -->
-      <template v-else-if="currentroute == 'unix'">
+      <div v-else-if="show && show['unix']">
         <div class="col-md-12 upmargin">
           <div class="col-md-6">
             <p class="lead fa fa-quote-left fa-3x fa-pull-left"
@@ -139,9 +135,9 @@
         <div class="col-md-12 upmargin aws">
           <span v-html="md.unix"></span>
         </div>
-      </template>
+      </div>
     <!-- homepage -->
-      <template v-else>
+      <div v-else>
         <div class="col-md-12">
           <div class="col-md-6">
             <p class="lead fa fa-quote-left fa-3x fa-pull-left"
@@ -165,9 +161,9 @@
             <span v-html="md[cat]"></span>
           </div>
         </div>
-      </template> <!-- if hash -->
+      </div>
     </div>
-    </script>
+    </template>
 
     <script src="js/vuesunix.js"></script>
 
