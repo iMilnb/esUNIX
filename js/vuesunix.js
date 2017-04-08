@@ -3,6 +3,7 @@ var language = 'en';
 
 Vue.component('bodycontent', {
     template: '#bodycontent',
+    // pass data from parent via custom tag
     props: ['show', 'language', 'md', 'msg']
 })
 
@@ -39,6 +40,7 @@ var app = new Vue({
                 });
             });
         },
+        // Update navbar style, change URL and set active link
         navstyle: function(active) {
             var vm = this;
             this.sections.forEach(function(sect) {
@@ -46,13 +48,13 @@ var app = new Vue({
                 vm.$set(vm.show, sect.link, false);
             });
             window.location.hash = '#' + active.link;
-            vm.$set(vm.show, active.link, true);
-            vm.$forceUpdate();
+            this.$set(vm.show, active.link, true);
+            // needed to refresh navbar style
+            this.$forceUpdate();
         },
         showscroll: function() {
             var viewport = window.innerHeight;
             var doclen = document.body.clientHeight;
-            console.log(viewport, doclen);
 
             return (doclen > viewport ? true : false);
         },
