@@ -89,5 +89,7 @@ document.onscroll = function() {
     var elt = document.getElementById('scrolldown');
     var y = window.innerHeight + window.scrollY >= document.getElementById('app').clientHeight;
 
-    elt.style.display = y ? 'none' : 'inline';
+    if (elt) {
+        elt.style.display = y ? 'none' : 'inline';
+    }
 }
