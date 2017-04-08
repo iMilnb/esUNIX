@@ -1,0 +1,111 @@
+title: 'esUNIX, engineering & solutions for UNIX-based platforms'
+
+md_cite_unix: |
+  > _Contrary to popular belief, Unix is user friendly. It just happens
+  > to be very selective about who it decides to make friends with._
+
+md_welcome: |
+  **_esUNIX_ es una empresa de consultoria** whose job is to follow your
+  infrastructures design and implementation projects.
+
+  Over the years, people from _esUNIX_ have dealt with hundreds of highly
+  available and sensitive environments such as **network operators**,
+  **hosting companies** or even global [VoIP][1] platforms.
+
+  [1]: http://en.wikipedia.org/wiki/Voice_over_IP
+
+slide_aws: 'Amazon Web Services architectures'
+slide_consulting: 'Custom infrastructures'
+slide_automation: 'Cloud automation'
+
+history: 'History'
+expertise: 'Expertise'
+examples: 'Examples'
+
+md_history: |
+  We, at _esUNIX_, are fond of UNIX and Linux systems. For 15+ years we've
+  been dealing with UNIX and Linux environments such as [Debian][1] GNU/Linux,
+  [RedHat][2], [NetBSD][3], [FreeBSD][4], [OpenBSD][5], or [Solaris][6]
+  and [SunOS][7] derivatives. We have a strong expertise on making these
+  Operating Systems scalable and responsive.
+
+  Not only we know their very core, we also participated in their
+  evolution by programming some of their components or have provided some
+  comprehensive documentation regarding their inner properties.
+
+  [1]: https://www.debian.org/
+  [2]: http://www.redhat.com/en
+  [3]: http://www.NetBSD.org
+  [4]: http://www.FreeBSD.org
+  [5]: http://www.OpenBSD.org
+  [6]: http://www.oracle.com/us/products/servers-storage/solaris/solaris11/overview/index.html
+  [7]: http://en.wikipedia.org/wiki/OpenSolaris
+
+md_expertise: |
+  Let's be clear: [Cloud Computing][1] is all about UNIX/Linux, so it is
+  very naturally that our expertise has grown strong and solid over the years on
+  Virtualization, and implicitely, the Cloud.
+
+  [Amazon Web Services][2] have made a magnificent work on making [Xen][3],
+  the virtualization technology it is built on, ready for the masses. We at
+  _esUNIX_, have a deep understanding on what **AWS** is about, and how to
+  create an optimized & scalable infrastructure in the Cloud.
+
+  [1]: https://en.wikipedia.org/wiki/Cloud_computing
+  [2]: http://aws.amazon.com
+  [3]: http://www.xen.org
+
+md_examples: |
+  * **AWS** highly available architectures: [Route 53][1] multi-region failover,
+    cost & speed optimization through [CloudFront][2], [MultiAZ][3],
+    [AutoScaled][4] and [Load Balanced][5] architectures, all in a secure,
+    [PCI/DSS][6] enabled environment
+
+  * Architectures from scratch: multi-homed _BGP_ routing, highly available
+    switching, firewalling and Load Balancing setups allowing scalable growth.
+
+  * Home made Cloud Platforms, using industry standards, well known, rock solid
+    technologies powered by flexible and easy-to-use deployment and
+    orchestration mechanisms.
+
+  [1]: https://aws.amazon.com/route53/
+  [2]: https://aws.amazon.com/cloudfront/
+  [3]: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html
+  [4]: https://aws.amazon.com/autoscaling/
+  [5]: https://aws.amazon.com/elasticloadbalancing/
+  [6]: https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard
+
+md_aws: |
+  [Amazon Web Services][1] is the most known and powerful Cloud platform around,
+  and you know it _with great power comes great responsibilities_!
+  There are many ways of designing an _AWS_ infrastructure, from the simplest
+  to the unnecessarily complicated. Our mission: to fit your needs.
+
+  You might have your project in mind:
+
+  * migrate your physical infrastructure to the cloud?
+  * extend your existing infrastructure to the Cloud?
+  * start a brand new project?
+  * prepare your existing _AWS_ assets for massive traffic or computing needs
+    growth?
+
+  Every one of these requests have an adequate and progressive answer. No need
+  for disruption, we have managed the most complex use cases without a second of
+  downtime.
+
+  Be reassured, you won't be on your own, not only we will folllow your project,
+  but a full deep understanding of the methodologies and techniques used for
+  your project setup will be explained, written down and teached to the team in
+  charge.
+
+
+  [1]: https://aws.amazon.com/
+
+md_unix: |
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+  culpa qui officia deserunt mollit anim id est laborum.
+

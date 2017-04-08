@@ -12,10 +12,9 @@ var app = new Vue({
     data: {
         title: 'esUNIX',
         sections: [
-            { title: 'Main', link: 'home' },
+            { title: 'Home', link: 'home' },
             { title: 'Amazon Web Services', link: 'aws' },
-            { title: 'UNIX & Linux', link: 'unix' },
-            { title: 'Contact', link: 'contact' }
+            { title: 'DevOps', link: 'devops' }
         ],
         countries: ['es', 'en'],
         flag: {},

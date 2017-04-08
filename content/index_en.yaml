@@ -17,10 +17,6 @@ roi: 'Optimize your R.O.I with a global cost-based approach'
 delivery: 'Deliver industry-standards, solid and secure solutions'
 reports: 'Providing with professional reports and close follow-up'
 
-slide_aws: 'Amazon Web Services architectures'
-slide_consulting: 'Custom infrastructures'
-slide_automation: 'Cloud automation'
-
 history: 'History'
 expertise: 'Expertise'
 examples: 'Examples'
@@ -141,3 +137,5 @@ md_unix: |
 
   **We know Linux, we know UNIX**, we can help you on all those areas in a
   professional and progressive way, trust us to be your guide.
+
+valencia: Our headquarters are located in Valencia, the Spanish Silicon Valley
