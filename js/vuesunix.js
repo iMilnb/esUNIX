@@ -51,12 +51,6 @@ var app = new Vue({
             // needed to refresh navbar style
             this.$forceUpdate();
         },
-        showscroll: function() {
-            var viewport = window.innerHeight;
-            var doclen = document.body.clientHeight;
-
-            return (doclen > viewport ? true : false);
-        },
         updatelang: function(country) {
             language = country;
             document.documentElement.lang = country;
@@ -76,20 +70,9 @@ var app = new Vue({
         this.contentload();
         this.updateflag();
         this.navstyle({link: 'home' });
+        window.addEventListener('scroll', this.handlescroll);
+    },
+    beforeDestroy: function() {
+        window.removeEventListener('scroll', this.handlescroll);
     }
 });
-
-// Not Vue related
-
-function scrolldown() {
-    window.scrollBy(0,window.innerHeight);
-}
-
-document.onscroll = function() {
-    var elt = document.getElementById('scrolldown');
-    var y = window.innerHeight + window.scrollY >= document.getElementById('app').clientHeight;
-
-    if (elt) {
-        elt.style.display = y ? 'none' : 'inline';
-    }
-}

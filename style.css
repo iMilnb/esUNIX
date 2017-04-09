@@ -67,13 +67,20 @@ body {
 .skillsitems {
   padding: 15px;
   /* background: #efef96; */
-  border-left: 20px solid #efef96;
   margin-left: 0px;
   background-image: url('media/images/red-pin-small.png');
   background-repeat: no-repeat;
   background-position: right top;
 /*  box-shadow: 3px 3px 3px; */
   margin-bottom: 20px;
+}
+
+.awsskills {
+  border-left: 20px solid #f7a80d;
+}
+
+.unixskills {
+  border-left: 20px solid #008500;
 }
 
 .skillsitems li {

@@ -51,11 +51,6 @@
       <!-- main -->
       <div class="container">
         <bodycontent :show="show" :md="md" :msg="msg"></bodycontent>
-        <div id="scrolldown" v-if="showscroll() === true">
-          <a href="javascript:scrolldown()">
-            <i class="fa fa-3x fa-arrow-circle-o-down"></i>
-          </a>
-        </div>
       </div><!-- /.container -->
 
       <div id="contactus" class="bg-primary text-white">
@@ -138,7 +133,7 @@
             </div>
           </div>
           <div class="col-md-12 upmargin aws">
-            <span v-html="md.unix"></span>
+            <span v-html="md.devops"></span>
           </div>
         </div>
       <!-- homepage -->
