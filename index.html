@@ -157,7 +157,7 @@
           <div class="col-md-12 upmargin">
             <div class="col-md-4" v-for="cat in ['history', 'expertise', 'examples']">
               <img class="center-block" :src="'media/images/' + cat + '.png'" />
-              <h3 class="text-center" v-html="cat"></h3>
+              <h3 class="text-center" v-html="msg[cat]"></h3>
               <span v-html="md[cat]"></span>
             </div>
           </div>

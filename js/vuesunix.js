@@ -1,5 +1,5 @@
 document.title = 'esUNIX';
-var language = 'en';
+var language = 'es';
 
 Vue.component('bodycontent', {
     template: '#bodycontent',
