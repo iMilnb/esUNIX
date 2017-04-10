@@ -1,37 +1,37 @@
-title: 'esUNIX, engineering & solutions for UNIX-based platforms'
+title: 'esUNIX, nacido en la nube'
 
-md_cite_unix: |
-  > _Contrary to popular belief, Unix is user friendly. It just happens
-  > to be very selective about who it decides to make friends with._
+md_cite_welcome: |
+  > _No es el más fuerte de las especies el que sobrevive, tampoco es el más
+  > inteligente el que sobrevive. Es aquel que es más adaptable al cambio._
+  > --Charles Darwin
 
 md_welcome: |
-  **_esUNIX_ es una empresa de consultoria** whose job is to follow your
-  infrastructures design and implementation projects.
+  **_esUNIX_ es una empresa de consultoría** cuyo trabajo es seguir tus
+  proyectos de diseño e implementación de infraestructuras.
 
-  Over the years, people from _esUNIX_ have dealt with hundreds of highly
-  available and sensitive environments such as **network operators**,
-  **hosting companies** or even global [VoIP][1] platforms.
+  Durante los años, los ingenieros de _esUNIX_ han tratado con entornos
+  altamente disponibles y sensibles, como **operadores de redes**,
+  **empresas de alojamiento** o incluso plataformas VoIP.
 
-  [1]: http://en.wikipedia.org/wiki/Voice_over_IP
+goals: 'En resumen, los puntos clave de nuestra misión'
+roi: 'Optimizar su R.O.I con un enfoque basado en los costos globales'
+delivery: 'Entregar estándares de la industria, soluciones sólidas y seguras'
+reports: 'Proporcionar informes profesionales y un seguimiento cercano'
 
-slide_aws: 'Amazon Web Services architectures'
-slide_consulting: 'Custom infrastructures'
-slide_automation: 'Cloud automation'
-
-history: 'History'
-expertise: 'Expertise'
-examples: 'Examples'
+history: 'Historia'
+expertise: 'Experiencia'
+examples: 'Ejemplos'
 
 md_history: |
-  We, at _esUNIX_, are fond of UNIX and Linux systems. For 15+ years we've
-  been dealing with UNIX and Linux environments such as [Debian][1] GNU/Linux,
-  [RedHat][2], [NetBSD][3], [FreeBSD][4], [OpenBSD][5], or [Solaris][6]
-  and [SunOS][7] derivatives. We have a strong expertise on making these
-  Operating Systems scalable and responsive.
+  En _esUNIX_ nos gustan los sistemas UNIX y Linux. Desde mas de 15+ años hemos
+  trabajado con entornos UNIX y Linux como [Debian][1] GNU/Linux,
+  [RedHat][2], [NetBSD][3], [FreeBSD][4], [OpenBSD][5], o [Solaris][6]
+  y derivativos de [SunOS][7]. Tenemos una gran experiencia en la arquitectura
+  de estos sistemas operativos y los utilizamos en plataformas escalables.
 
-  Not only we know their very core, we also participated in their
-  evolution by programming some of their components or have provided some
-  comprehensive documentation regarding their inner properties.
+  No sólo tenemos un conocimiento profundo de estos sistemas sino también
+  participamos en sus evoluciónes mediante la programación de algunos de sus
+  componentes o proporcionando documentación completa sobre sus propiedades.
 
   [1]: https://www.debian.org/
   [2]: http://www.redhat.com/en
@@ -42,7 +42,7 @@ md_history: |
   [7]: http://en.wikipedia.org/wiki/OpenSolaris
 
 md_expertise: |
-  Let's be clear: [Cloud Computing][1] is all about UNIX/Linux, so it is
+  Let's be clear: [Cloud Computing][1] is all about UNIX and Linux, so it is
   very naturally that our expertise has grown strong and solid over the years on
   Virtualization, and implicitely, the Cloud.
 
@@ -75,19 +75,35 @@ md_examples: |
   [5]: https://aws.amazon.com/elasticloadbalancing/
   [6]: https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard
 
+md_cite_aws: |
+  > Friends don't let friends build datacenters --Charles E. Phillips
+
 md_aws: |
   [Amazon Web Services][1] is the most known and powerful Cloud platform around,
   and you know it _with great power comes great responsibilities_!
   There are many ways of designing an _AWS_ infrastructure, from the simplest
-  to the unnecessarily complicated. Our mission: to fit your needs.
+  to the unnecessarily complicated. Our mission: to **fit your needs**.
+
+  _AWS_ is composed of hundreds of services that can be plugged together,
+  leading to **thousands** of possible combinations! From basic instances to
+  [EC2 Container Service (ECS)][2], [Serverless][3] platforms using
+  [Amazon Lambda][4] and the [API Gateway][5] or even massive big data
+  workloads using [S3 Athena][6], we can help you pick the tool **you** need.
 
   You might have your project in mind:
 
-  * migrate your physical infrastructure to the cloud?
-  * extend your existing infrastructure to the Cloud?
-  * start a brand new project?
-  * prepare your existing _AWS_ assets for massive traffic or computing needs
-    growth?
+  <ul class="fa-ul skillsitems awsskills">
+    <li><i class="fa-li fa fa-truck"></i>**Migrate** your physical
+    infrastructure to the Cloud?</li>
+    <li><i class="fa-li fa fa-code-fork"></i>**Extend** / **hybridize** your
+    existing infrastructure to the Cloud?</li>
+    <li><i class="fa-li fa fa-star"></i>Start a **brand new** project?</li>
+    <li><i class="fa-li fa fa-rocket"></i>Prepare your existing _AWS_ assets
+    for massive traffic or computing needs **growth**?</li>
+    <li><i class="fa-li fa fa-stethoscope"></i>**Audit** an existing
+    infrastructure?</li>
+    <li><i class="fa-li fa fa-graduation-cap"></i>**Train** your teams?</li>
+  </ul>
 
   Every one of these requests have an adequate and progressive answer. No need
   for disruption, we have managed the most complex use cases without a second of
@@ -98,14 +114,46 @@ md_aws: |
   your project setup will be explained, written down and teached to the team in
   charge.
 
-
   [1]: https://aws.amazon.com/
+  [2]: https://aws.amazon.com/ecs/
+  [3]: https://serverless.com/
+  [4]: https://aws.amazon.com/lambda/
+  [5]: https://aws.amazon.com/api-gateway/
+  [6]: https://aws.amazon.com/athena/
 
-md_unix: |
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-  culpa qui officia deserunt mollit anim id est laborum.
+md_cite_unix: |
+  > UNIX is not so much an operating system as a way of thinking
 
+md_devops: |
+  What is DevOps? Long story short, DevOps means [R.O.I.][1], the days of the
+  mutable infrastructure are gone. With cloud infrastructure and moreover
+  ephemeral instances, immutable platforms are the new norm. Get ready to
+  put aside chaos and enter the world of predictivity.
+
+  Yet, continuous integration is not as easy as a `git pull`, there must be
+  strategy, knowledge and control.
+
+  How does _esUNIX_ fit in? Simple answer: we've been working for all of those.
+
+  <ul class="fa-ul skillsitems unixskills">
+    <li><i class="fa-li fa fa-lightbulb-o"></i>Got an infrastructure in mind
+    and need the help of an **experienced professional** to make it happen?</li>
+    <li><i class="fa-li fa fa-stethoscope"></i>Your platform is up and
+    running, but either you'd need an **audit** to ensure its viability or you
+    need an external eye to find out what's causing those slowdowns?</li>
+    <li><i class="fa-li fa fa-gear"></i>You built it all by yourselves, but in
+    an old fashion way, piece by piece not really thinking about
+    **industrialization**?</li>
+    <li><i class="fa-li fa fa-bug"></i>**Debug** an existing script,
+    program, component, deployment mechanism?  </li>
+    <li><i class="fa-li fa fa-graduation-cap"></i>You might need **training**
+    on those new technologies you'd like to use in your project?</li>
+  </ul>
+
+  We know Linux, we know UNIX, we are skilled sysadmins and developers, we're
+  the **DevOps on stamina**! we can help you on all those areas in a
+  professional and progressive way, trust us to be your guide.
+
+  [1]: https://en.wikipedia.org/wiki/Return_on_investment
+
+valencia: Our headquarters are located in Valencia, the Spanish Silicon Valley
