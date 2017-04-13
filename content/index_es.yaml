@@ -61,16 +61,16 @@ md_examples: |
   * **AWS** arquitecturas altamente disponibles: [Route 53][1] multi-region
     conmutación por error, 
     optimización de coste y velocidad mediante [CloudFront][2], [MultiAZ][3],
-    [AutoScaled][4] y [Load Balanced][5] arquiitecturas, todo en un entorno
+    [AutoScaled][4] y [Load Balanced][5] arquitecturas, todo en un entorno
     seguro habilitado [PCI/DSS][6]
 
   * Arquitecturas "from scratch": multi-homed _BGP_ routing, alta disponibilidad
     switching, firewalling y Load Balancing configuraciónes permitiendo un
     crecimiento escalable.
 
-  * Home made Cloud Platforms, using industry standards, well known, rock solid
-    technologies powered by flexible and easy-to-use deployment and
-    orchestration mechanisms.
+  * Plataformas de Nube caseras, Utilizando estándares de la industria, bien
+    conocidos, tecnologías sólidas basadas en mecanismos de despliegue y
+    orquestación flexibles y fáciles de usar.
 
   [1]: https://aws.amazon.com/route53/
   [2]: https://aws.amazon.com/cloudfront/
@@ -80,43 +80,46 @@ md_examples: |
   [6]: https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard
 
 md_cite_aws: |
-  > Friends don't let friends build datacenters --Charles E. Phillips
+  > _Los amigos no dejan a los amigos construir centros de datos_
+  > --Charles E. Phillips
 
 md_aws: |
-  [Amazon Web Services][1] is the most known and powerful Cloud platform around,
-  and you know it _with great power comes great responsibilities_!
-  There are many ways of designing an _AWS_ infrastructure, from the simplest
-  to the unnecessarily complicated. Our mission: to **fit your needs**.
+  [Amazon Web Services] [1] es la plataforma de Cloud más conocida y poderosa
+  y como sabe _con gran poder vienen grandes responsabilidades_!
+  Hay muchas maneras de diseñar una infraestructura _AWS_, de la más simple a la
+  innecesariamente complicada.  Nuestra misión: **satisfacer sus necesidades**.
 
-  _AWS_ is composed of hundreds of services that can be plugged together,
-  leading to **thousands** of possible combinations! From basic instances to
-  [EC2 Container Service (ECS)][2], [Serverless][3] platforms using
-  [Amazon Lambda][4] and the [API Gateway][5] or even massive big data
-  workloads using [S3 Athena][6], we can help you pick the tool **you** need.
+  _AWS_ se compone de cientos de servicios que se pueden conectar juntos, lo
+  que lleva a **miles** de posibles combinaciones! De las instancias básicas a
+  las plataformas [EC2 Container Service (ECS)][2], servicios [Serverless][3]
+  que utilizan [Amazon Lambda][4] y la [API Gateway][5], o incluso tratamientos
+  de "big data"  utilizando [S3 Athena][6], podemos ayudarle a escoger la
+  herramienta que necesita.
 
-  You might have your project in mind:
+  A la mejor tiene preparado uno de estos proyectos :
 
   <ul class="fa-ul skillsitems awsskills">
-    <li><i class="fa-li fa fa-truck"></i>**Migrate** your physical
-    infrastructure to the Cloud?</li>
-    <li><i class="fa-li fa fa-code-fork"></i>**Extend** / **hybridize** your
-    existing infrastructure to the Cloud?</li>
-    <li><i class="fa-li fa fa-star"></i>Start a **brand new** project?</li>
-    <li><i class="fa-li fa fa-rocket"></i>Prepare your existing _AWS_ assets
-    for massive traffic or computing needs **growth**?</li>
-    <li><i class="fa-li fa fa-stethoscope"></i>**Audit** an existing
-    infrastructure?</li>
-    <li><i class="fa-li fa fa-graduation-cap"></i>**Train** your teams?</li>
+    <li><i class="fa-li fa fa-truck"></i>¿Migrar su infraestructura física a
+    la nube?</li>
+    <li><i class="fa-li fa fa-code-fork"></i>¿**Extender** / **hibridizar** su
+    infraestructura existente con la Nube?</li>
+    <li><i class="fa-li fa fa-star"></i>¿Iniciar un proyecto **nuevo**?</li>
+    <li><i class="fa-li fa fa-rocket"></i>¿Preparar sus componentes _AWS_
+    existentes para crecimiento masivo de trafico?</li>
+    <li><i class="fa-li fa fa-stethoscope"></i>¿**Auditar** una infraestructura
+    existante?</li>
+    <li><i class="fa-li fa fa-graduation-cap"></i>¿**Entrenar** a sus
+    equipos?</li>
   </ul>
 
-  Every one of these requests have an adequate and progressive answer. No need
-  for disruption, we have managed the most complex use cases without a second of
-  downtime.
+  Cada una de estas solicitudes tiene una respuesta adecuada y progresiva. No
+  hay necesidad de interrupción, hemos manejado los casos de uso más complejos
+  sin un segundo de tiempo de inactividad.
 
-  Be reassured, you won't be on your own, not only we will folllow your project,
-  but a full deep understanding of the methodologies and techniques used for
-  your project setup will be explained, written down and teached to the team in
-  charge.
+  Estén tranquilizados, no estarán solos, no solo seguiremos su proyecto, sino
+  que se explicará, escribirá y enseñará al equipo encargado un profundo
+  conocimiento de las metodologías y técnicas utilizadas para la configuración
+  de su proyecto.
 
   [1]: https://aws.amazon.com/
   [2]: https://aws.amazon.com/ecs/
