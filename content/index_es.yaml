@@ -129,38 +129,42 @@ md_aws: |
   [6]: https://aws.amazon.com/athena/
 
 md_cite_unix: |
-  > UNIX is not so much an operating system as a way of thinking
+  > UNIX no es tanto un sistema operativo como una forma de pensar
 
 md_devops: |
-  What is DevOps? Long story short, DevOps means [R.O.I.][1], the days of the
-  mutable infrastructure are gone. With cloud infrastructure and moreover
-  ephemeral instances, immutable platforms are the new norm. Get ready to
-  put aside chaos and enter the world of predictivity.
+  ¿Qué es el DevOps? para ponerlo simple, DevOps significa [R.O.I.][1], los días
+  de la infraestructura mutable se han ido. Con las infraestructuras de nube y
+  las instancias efimeras, las plataformas inmutables son la nueva norma.
+  Prepárate para dejar de lado el caos y entrar en el mundo de la predicción.
 
-  Yet, continuous integration is not as easy as a `git pull`, there must be
-  strategy, knowledge and control.
+  Sin embargo, la integración continua no es tan fácil como un `git pull`,
+  debe haber estrategia, conocimiento y control.
 
-  How does _esUNIX_ fit in? Simple answer: we've been working for all of those.
+  ¿Como le puede ayudar _esUNIX_?
 
   <ul class="fa-ul skillsitems unixskills">
-    <li><i class="fa-li fa fa-lightbulb-o"></i>Got an infrastructure in mind
-    and need the help of an **experienced professional** to make it happen?</li>
-    <li><i class="fa-li fa fa-stethoscope"></i>Your platform is up and
-    running, but either you'd need an **audit** to ensure its viability or you
-    need an external eye to find out what's causing those slowdowns?</li>
-    <li><i class="fa-li fa fa-gear"></i>You built it all by yourselves, but in
-    an old fashion way, piece by piece not really thinking about
-    **industrialization**?</li>
-    <li><i class="fa-li fa fa-bug"></i>**Debug** an existing script,
-    program, component, deployment mechanism?  </li>
-    <li><i class="fa-li fa fa-graduation-cap"></i>You might need **training**
-    on those new technologies you'd like to use in your project?</li>
+    <li><i class="fa-li fa fa-lightbulb-o"></i>¿Tienes una infraestructura
+    en mente y necesitas la ayuda de un **profesional experimentado** para que
+    suceda?</li>
+    <li><i class="fa-li fa fa-stethoscope"></i>Su plataforma está lista y
+    funcionando, pero necesitaría una **auditoría** para asegurar su viabilidad
+    o necesita un ojo externo para averiguar qué está causando esas
+    ralentizaciones?</li>
+    <li><i class="fa-li fa fa-gear"></i>Lo construisteis todo vosotros mismos,
+    pero de una manera antigua, pieza por pieza no pensando realmente en la
+    **industrialización**?</li>
+    <li><i class="fa-li fa fa-bug"></i>¿**Depurar** un script existante,
+    un programa, componentes o mecanismos de desarollo?  </li>
+    <li><i class="fa-li fa fa-graduation-cap"></i>¿A la mejor necesita
+    **entrenamiento** con estas nuevas tecnologías que que quiere utilizar
+    en su proyecto?</li>
   </ul>
 
-  We know Linux, we know UNIX, we are skilled sysadmins and developers, we're
-  the **DevOps on stamina**! we can help you on all those areas in a
-  professional and progressive way, trust us to be your guide.
+  Conocemos Linux, conocemos UNIX, somos administradores de sistemas y
+  desarrolladores expertos ¡somos los **DevOps en stamina**!  Podemos ayudarle
+  en todas esas áreas de una manera profesional y progresiva, confíe en nosotros
+  para ser su guía.
 
-  [1]: https://en.wikipedia.org/wiki/Return_on_investment
+  [1]: https://es.wikipedia.org/wiki/Retorno_de_la_inversi%C3%B3n
 
 valencia: Our headquarters are located in Valencia, the Spanish Silicon Valley
