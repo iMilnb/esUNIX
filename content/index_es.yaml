@@ -6,12 +6,15 @@ md_cite_welcome: |
   > --Charles Darwin
 
 md_welcome: |
-  **_esUNIX_ es una empresa de consultoría** cuyo trabajo es seguir tus
-  proyectos de diseño e implementación de infraestructuras.
+  **_esUNIX_ es una empresa de consultoría** especializada en arquitecturas
+  [Amazon Web Services][1], nuestro trabajo es de seguir sus proyectos de
+  diseño e implementación de infraestructuras.
 
   Durante los años, los ingenieros de _esUNIX_ han tratado con entornos
   de alta disponibilidad y sensibles, como **operadores de redes**,
   **empresas de alojamiento** o incluso plataformas VoIP.
+
+  [1]: https://aws.amazon.com/
 
 goals: 'En resumen, los puntos clave de nuestra misión'
 roi: 'Optimizar su R.O.I con un enfoque basado en los costos globales'

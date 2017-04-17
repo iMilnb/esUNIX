@@ -5,12 +5,15 @@ md_cite_welcome: |
   > intelligent, but the one most responsive to change._ --Charles Darwin
 
 md_welcome: |
-  **_esUNIX_ is a consulting company** whose job is to follow your
-  infrastructures design and implementation projects.
+  **_esUNIX_ is a consulting company** specialized in [Amazon Web Services][1]
+  Architectures. Our job is to follow your infrastructures design and
+  implementation projects.
 
   Over the years, people from _esUNIX_ have dealt with hundreds of highly
   available and sensitive environments such as **network operators**,
   **hosting companies** or even global VoIP platforms.
+
+  [1]: https://aws.amazon.com/
 
 goals: 'In short, our mission key points'
 roi: 'Optimize your R.O.I with a global cost-based approach'
