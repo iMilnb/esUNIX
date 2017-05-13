@@ -7,7 +7,7 @@ md_cite_welcome: |
 
 md_welcome: |
   **_esUNIX_ es una empresa de consultoría** especializada en arquitecturas
-  [Amazon Web Services][1], nuestro trabajo es de seguir sus proyectos de
+  [Amazon Web Services][1], nuestro trabajo es seguir sus proyectos de
   diseño e implementación de infraestructuras.
 
   Durante los años, los ingenieros de _esUNIX_ han tratado con entornos
@@ -16,7 +16,7 @@ md_welcome: |
 
   [1]: https://aws.amazon.com/
 
-goals: 'En resumen, los puntos clave de nuestra misión'
+goals: 'En resumen, los puntos clave de nuestra misión son'
 roi: 'Optimizar su R.O.I con un enfoque basado en los costos globales'
 delivery: 'Entregar estándares de la industria, soluciones sólidas y seguras'
 reports: 'Proporcionar informes profesionales y un seguimiento cercano'
@@ -26,14 +26,14 @@ expertise: 'Experiencia'
 examples: 'Ejemplos'
 
 md_history: |
-  En _esUNIX_ nos gustan los sistemas UNIX y Linux. Desde mas de 15+ años hemos
+  En _esUNIX_ nos gustan los sistemas UNIX y Linux. Desde hace mas de 15 años hemos
   trabajado con entornos UNIX y Linux como [Debian][1] GNU/Linux,
   [RedHat][2], [NetBSD][3], [FreeBSD][4], [OpenBSD][5], o [Solaris][6]
   y derivativos de [SunOS][7]. Tenemos una gran experiencia en la arquitectura
   de estos sistemas operativos y los utilizamos en plataformas escalables.
 
   No sólo tenemos un conocimiento profundo de estos sistemas sino también
-  participamos en sus evoluciónes mediante la programación de algunos
+  participamos en sus evoluciones mediante la programación de algunos
   componentes o proporcionando documentación completa sobre sus propiedades.
 
   [1]: https://www.debian.org/
@@ -45,16 +45,16 @@ md_history: |
   [7]: http://en.wikipedia.org/wiki/OpenSolaris
 
 md_expertise: |
-  [Los servicios en la Nube][1] son intimamente relacionados con UNIX y Linux,
-  asi muy naturalmente nuestra expenriencia creció de manera fuerte con bases
-  solidas a lo largo de los años en el dominio de la virtualización, y
+  [Los servicios en la Nube][1] están íntimamente relacionados con UNIX y Linux,
+  asi de forma natural nuestra expenriencia creció fuertemente con bases
+  solidas a lo largo de los años en el dominio de la virtualización, e
   implícitamente, la Nube.
 
-  [Amazon Web Services][2] ha echo un trabajo extraordinario en con [Xen][3],
-  la tecnología de virtualización que utiliza **AWS**, poniendola a escala,
+  [Amazon Web Services][2] ha hecho un trabajo extraordinario con [Xen][3],
+  la tecnología de virtualización que utiliza **AWS**, poniéndola a escala,
   lista para las masas.
-  Nosotros en _esUNIX_, tenemos un profondo entendimiento de lo que es **AWS**,
-  y cómo crear una infraestructura optimizada y escalable en la Nube.
+  Nosotros en _esUNIX_, tenemos un profundo entendimiento de lo que es **AWS**,
+  y conocemos la manera de crear una infraestructura optimizada y escalable en la Nube.
 
   [1]: https://es.wikipedia.org/wiki/Computaci%C3%B3n_en_la_nube
   [2]: http://aws.amazon.com
@@ -62,16 +62,16 @@ md_expertise: |
 
 md_examples: |
   * **AWS** arquitecturas altamente disponibles: [Route 53][1] multi-region
-    conmutación por error, 
+    conmutación por error,
     optimización de coste y velocidad mediante [CloudFront][2], [MultiAZ][3],
     [AutoScaled][4] y [Load Balanced][5] arquitecturas, todo en un entorno
     seguro habilitado [PCI/DSS][6]
 
   * Arquitecturas "from scratch": multi-homed _BGP_ routing, alta disponibilidad
-    switching, firewalling y Load Balancing configuraciónes permitiendo un
+    switching, firewalling y Load Balancing configuraciones permitiendo un
     crecimiento escalable.
 
-  * Plataformas de Nube caseras, Utilizando estándares de la industria, bien
+  * Plataformas de Nube caseras, utilizando estándares de la industria, bien
     conocidos, tecnologías sólidas basadas en mecanismos de despliegue y
     orquestación flexibles y fáciles de usar.
 
@@ -88,7 +88,7 @@ md_cite_aws: |
 
 md_aws: |
   [Amazon Web Services] [1] es la plataforma de Cloud más conocida y poderosa
-  y como sabe _con gran poder vienen grandes responsabilidades_!
+  y como usted sabe "_con gran poder vienen grandes responsabilidades_!"
   Hay muchas maneras de diseñar una infraestructura _AWS_, de la más simple a la
   innecesariamente complicada.  Nuestra misión: **satisfacer sus necesidades**.
 
@@ -99,18 +99,18 @@ md_aws: |
   de "big data"  utilizando [S3 Athena][6], podemos ayudarle a escoger la
   herramienta que necesita.
 
-  A la mejor tiene preparado uno de estos proyectos :
+  A lo mejor tiene pensado uno de estos proyectos :
 
   <ul class="fa-ul skillsitems awsskills">
     <li><i class="fa-li fa fa-truck"></i>¿Migrar su infraestructura física a
-    la nube?</li>
+    la Nube?</li>
     <li><i class="fa-li fa fa-code-fork"></i>¿**Extender** / **hibridizar** su
     infraestructura existente con la Nube?</li>
     <li><i class="fa-li fa fa-star"></i>¿Iniciar un proyecto **nuevo**?</li>
     <li><i class="fa-li fa fa-rocket"></i>¿Preparar sus componentes _AWS_
-    existentes para crecimiento masivo de trafico?</li>
+    existentes para un crecimiento masivo de tráfico?</li>
     <li><i class="fa-li fa fa-stethoscope"></i>¿**Auditar** una infraestructura
-    existante?</li>
+    existente?</li>
     <li><i class="fa-li fa fa-graduation-cap"></i>¿**Entrenar** a sus
     equipos?</li>
   </ul>
@@ -137,13 +137,13 @@ md_cite_unix: |
 md_devops: |
   ¿Qué es el DevOps? para ponerlo simple, DevOps significa [R.O.I.][1], los días
   de la infraestructura mutable se han ido. Con las infraestructuras de nube y
-  las instancias efimeras, las plataformas inmutables son la nueva norma.
+  las instancias efímeras, las plataformas inmutables son la nueva norma.
   Prepárate para dejar de lado el caos y entrar en el mundo de la predicción.
 
   Sin embargo, la integración continua no es tan fácil como un `git pull`,
   debe haber estrategia, conocimiento y control.
 
-  ¿Como le puede ayudar _esUNIX_?
+  ¿Cómo le puede ayudar _esUNIX_?
 
   <ul class="fa-ul skillsitems unixskills">
     <li><i class="fa-li fa fa-lightbulb-o"></i>¿Tienes una infraestructura
@@ -172,4 +172,4 @@ md_devops: |
 
 valencia: Our headquarters are located in Valencia, the Spanish Silicon Valley
 
-contactus: contactenos
+contactus: contáctenos
